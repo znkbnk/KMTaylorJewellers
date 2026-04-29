@@ -1,0 +1,111 @@
+.card {
+  cursor: pointer;
+  animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.card-image-wrap {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #e8dfd0;
+  margin-bottom: 20px;
+}
+
+.card-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.card:hover .card-image-wrap img {
+  transform: scale(1.06);
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 22, 18, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-btn {
+  background: var(--cream);
+  color: var(--ink);
+  padding: 14px 28px;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  transform: translateY(8px);
+  opacity: 0;
+  transition: all 0.3s ease 0.1s;
+}
+
+.card:hover .card-btn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card-body {
+  padding: 0 4px;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.card-sku {
+  color: var(--muted);
+}
+
+.card-title {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.card-specs {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 12px;
+  font-weight: 300;
+}
+
+.card-dot {
+  color: var(--gold);
+}
+
+.card-enq {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-weight: 500;
+  padding-top: 12px;
+  border-top: 1px solid rgba(166, 124, 82, 0.2);
+  transition: color 0.3s;
+}
+
+.card:hover .card-enq {
+  color: var(--gold);
+}

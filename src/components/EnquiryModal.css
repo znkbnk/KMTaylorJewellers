@@ -1,0 +1,99 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 22, 18, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal {
+  background: var(--cream);
+  padding: 48px 40px;
+  max-width: 520px;
+  width: 100%;
+  position: relative;
+  border-top: 3px solid var(--gold);
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+}
+
+.modal-title {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.modal-text {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 32px;
+  font-weight: 300;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-input {
+  background: transparent;
+  border: 1px solid rgba(166, 124, 82, 0.25);
+  padding: 14px 16px;
+  font-size: 14px;
+  color: var(--ink);
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.form-input:focus {
+  border-color: var(--gold);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-btn {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 16px 32px;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: background 0.3s;
+}
+
+.form-btn:hover {
+  background: var(--gold);
+}
+
+@media (max-width: 900px) {
+  .modal {
+    padding: 36px 24px;
+  }
+}

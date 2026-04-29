@@ -1,0 +1,21 @@
+.topbar {
+  background: var(--ink);
+  color: var(--cream);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 10px 32px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+}
+
+.topbar-right {
+  opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+  .topbar-right {
+    display: none;
+  }
+}

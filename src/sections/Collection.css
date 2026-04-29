@@ -1,0 +1,57 @@
+.section {
+  padding: 120px 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-header {
+  max-width: 720px;
+  margin-bottom: 60px;
+}
+
+.section-sub {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--muted);
+  font-weight: 300;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: 1px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  transition: all 0.3s;
+}
+
+.filter-btn:hover:not(.active) {
+  background: rgba(26, 22, 18, 0.05);
+}
+
+.filter-btn.active {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 80px 24px;
+  }
+}

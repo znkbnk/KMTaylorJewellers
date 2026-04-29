@@ -1,0 +1,42 @@
+.bespoke {
+  padding: 140px 32px;
+  text-align: center;
+  background: var(--cream);
+}
+
+.bespoke-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.bespoke-text {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.bespoke-btn {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 20px 40px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: background 0.3s;
+}
+
+.bespoke-btn:hover {
+  background: var(--gold);
+}
+
+@media (max-width: 900px) {
+  .bespoke {
+    padding: 80px 24px;
+  }
+}
